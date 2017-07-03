@@ -153,8 +153,28 @@ html, body {
     width: 452px;
     height: 264px;
     background-image: url("./images/about.png");
+    margin: 74px 0 0 51px;
 }
 
+.about-text {
+    width: 570px;
+    float: right;
+    margin-top: 123px;
+}
+
+.about-textname {
+    font-size: 60px;
+    font-family: 'Elephant', sans-serif;
+    color: #29d9c2;
+}
+
+.text {
+    font-size: 16px;
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+    margin-top: 68px;
+    line-height: 35px;
+}
 
 .proverka {
     position: absolute;
