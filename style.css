@@ -142,11 +142,7 @@ html, body {
     opacity: 0.7;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
+
 
 .vector-smart-obiject {
     float: left;
@@ -174,6 +170,123 @@ html, body {
     font-family: 'Lato', sans-serif;
     margin-top: 68px;
     line-height: 35px;
+}
+
+.destination {
+    background-color: #f2fefe;
+    margin-top: 109px;
+}
+
+.destination-text {
+    float: left;
+    margin: 84px 0 0px 96px;
+    width: 675px;
+}
+
+.destination-text .text {
+    font-size: 16px;
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+    line-height: 35px;
+    margin: 75px 0 0 5px;
+}
+
+.destination-name {
+    font-size: 60px;
+    font-family: 'Elephant', sans-serif;
+    color: #29d9c2;
+}
+
+.see-basic-regulation {
+    float: right;
+    margin: 89px 82px 0 0;
+}
+
+.see-basic-regulation-image {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.see-basic-regulation-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #777777;
+    padding: 21px;
+    margin: -22px 0 0 7px;
+}
+
+.search {
+    height: 15px;
+    width: 154px;
+    border: 1px solid #e8e8e8;
+    padding: 10px 40px;
+    float: left;
+    margin: 57px 0 0 98px;
+    border-radius: 20px;
+    background: url("./images/search.png") no-repeat;
+    background-size: 18px 18px;
+    background-position: 12px;
+}
+
+ .all-recomended-place {
+    float: right;
+    font-size: 16px;
+    color: #bcbebe;
+    width: 287px;
+    height: 15px;
+    margin: 61px 91px 0 0;
+}
+
+.active {
+    font-weight: bold;
+    color: #777777;
+}
+
+.batu-right {
+    float: right;
+    width: 470px;
+}
+
+.batu {
+    background-image: url("./images/batu.png");
+    width: 1181px;
+    height: 518px;
+    margin: 19px 0 32px 0;
+
+}
+
+.batu-text {
+    width: 373px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #777777;
+    line-height: 35px;
+    margin: 68px 0 0 29px;
+}
+
+.name-batu {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    color: #2ca6b1;
+    margin: 34px 0px 0 24px;
+}
+
+.batu-image {
+    width: 86px;
+    height: 89px;
+    background-image: url("./images/batu-image.png");
+    margin: 50px 0 0 19px;
+}
+
+
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .proverka {
