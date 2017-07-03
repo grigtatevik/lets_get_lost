@@ -61,19 +61,21 @@ html, body {
 
 .header-menu li {
     float: left;
-    padding: 0 30px 0 30px;
+    margin-left: 16px;
 }
 
 .header-menu li a {
     list-style: none;
     text-decoration: none;
     color: white;
+    border: 3px solid transparent;
+    border-radius: 36px;
+    padding: 15px 20px;
+    transition: all 0.2s ease-out 0s;
 }
 
 .header-menu a:hover {
-    border: 3px solid;
-    border-radius: 36px;
-    padding: 15px 20px;
+    border-color: white;
 }
 
 .profile {
@@ -84,6 +86,7 @@ html, body {
     border-radius: 50%;
     position: relative;
     margin: 35px 16px;
+    cursor: pointer;
 }
 
 .profile:after {
@@ -132,16 +135,24 @@ html, body {
     border-radius: 32px;
     color: #10273d;
     font-weight: bold;
+    transition: all 0.2s ease-out 0s;
 }
 
 .header-button:hover {
-     opacity: 0.7;
+    opacity: 0.7;
 }
 
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
+}
+
+.vector-smart-obiject {
+    float: left;
+    width: 452px;
+    height: 264px;
+    background-image: url("./images/about.png");
 }
 
 
