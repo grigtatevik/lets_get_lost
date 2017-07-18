@@ -80,7 +80,7 @@ html, body {
 
 .profile {
     float: right;
-    background-size: auto;
+    background-size: cover;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -245,15 +245,60 @@ html, body {
 
 .batu-right {
     float: right;
-    width: 470px;
+    width: 485px;
+    height: 520px;
+    background: white;
+    opacity: 0.9;
+    transition: all 0.2s ease-out 0s;
+    transform: translateX(100%)
+}
+
+.batu-right:hover:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: 10px solid transparent;
+    border-right: 10px solid white;
+    transform: translate(-100%, -50%);
+}
+
+.see-more {
+    left: 0;
+    bottom: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+    background-image: url("./images/seemore-shadow.png");
+    width: 180px;
+    height: 104px;
+    transform: translateX(-100%);
+    background-position: right bottom;
+    box-sizing: border-box;
+    padding: 68px 0 0 79px;
+    position: absolute;
+}
+
+.see-more:after {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url("./images/batu-arrow.png");
+}
+
+.batu-right:hover {
+    transform: translateX(0%);
 }
 
 .batu {
     background-image: url("./images/batu.png");
-    width: 1181px;
+    width: 1170px;
     height: 518px;
     margin: 19px 0 32px 0;
-
+    overflow: hidden;
 }
 
 .batu-text {
@@ -280,6 +325,130 @@ html, body {
     margin: 50px 0 0 19px;
 }
 
+.bromo {
+    background-image: url("./images/bromo-left.png");
+    width: 668px;
+    height: 361px;
+    float: left; 
+    position: relative;
+    overflow: hidden;
+}
+
+.bromo-image {
+    width: 107px;
+    height: 53px;
+    background-image: url("./images/bromo-image.png");
+    margin: 44px 0 0 32px;
+}
+
+.bromo-left {
+    float: left;
+    width: 333px;
+    height: 361px;
+    background: white;
+    opacity: 0.9;
+    transition: all 0.2s ease-out 0s;
+    transform: translateX(-100%)
+}
+
+.see-more-bromo:hover +.bromo-left {
+    transform: translate(0%);
+}
+
+.name-bromo {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    color: #96d7d9;
+    margin: 29px 0px 0 29px;
+}
+
+.bromo-text {
+    width: 300px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #777777;
+    line-height: 35px;
+    margin: 62px 0 0 29px;
+}
+
+.see-more-bromo {
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+    background-image: url("./images/seemore-shadow.png");
+    width: 180px;
+    height: 104px;
+    transform: translateX(0%);
+    background-position: right bottom;
+    box-sizing: border-box;
+    padding: 68px 0 0 79px;
+    position: absolute;
+}
+
+.see-more-bromo:after {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url("./images/batu-arrow.png");
+}
+
+.bromo-left:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: 10px solid transparent;
+    border-left: 10px solid white;
+    transform: translate(100%, 50%);
+    display: none;
+}
+
+.see-more-bromo:hover + .bromo-left:after {
+    display: block;
+}
+
+.boat-image {
+    background-image: url("./images/qwert.png");
+    width: 472px;
+    height: 362px;
+    float: right;
+}
+
+.paginator {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    height: 30px;
+    text-align: center;
+    padding: 20px;
+    margin: 55px 0;
+    font-weight: bold;
+}
+
+.paginator li a {
+    text-decoration: none;
+    display: block;
+    color: #acacac;
+    font-size: 18px;
+    margin-right: 14px;
+    transition: all 0.2s ease-out 0s;
+    font-size: 24px solid transparent;
+}
+
+.paginator li {
+    display: inline-block;
+}
+
+.paginator li a:hover,
+.paginator li a.active {
+    transform: scale(1.5);
+    color: #01a2a6;
+}
 
 
 
