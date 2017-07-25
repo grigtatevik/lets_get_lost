@@ -79,17 +79,22 @@ html, body {
 }
 
 .profile {
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
     float: right;
+    margin: 35px 16px;
+}
+
+.profile-image {
     background-size: cover;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     position: relative;
-    margin: 35px 16px;
-    cursor: pointer;
 }
 
-.profile:after {
+.profile-image:after {
     content: "";
     position: absolute;
     top: 10px;
@@ -227,6 +232,7 @@ html, body {
     background: url("./images/search.png") no-repeat;
     background-size: 18px 18px;
     background-position: 12px;
+    outline-width: inherit;
 }
 
  .all-recomended-place {
@@ -236,11 +242,13 @@ html, body {
     width: 287px;
     height: 15px;
     margin: 61px 91px 0 0;
+    cursor: pointer;
 }
 
 .active {
     font-weight: bold;
     color: #777777;
+    cursor: none;
 }
 
 .batu-right {
@@ -450,7 +458,395 @@ html, body {
     color: #01a2a6;
 }
 
+.set-ittenery {
+    margin: 133px 0 0;
+    font-family: 'lato' sans-serif;
+    text-align: center;
+}
 
+.set-ittenery-name{
+    font-size: 67px;
+    color: #29d9c2;
+    padding: 15px;
+    font-weight: bold;
+    margin: 50px 0 0;
+}
+
+.set-ittenery-text {
+    color: #a1a1a1;
+    font-size: 16px;
+    width: 751px;
+    text-align: center;
+    padding: 10px;
+    line-height: 33px;
+    margin: 46px 0 0 204px;
+}
+
+.routes {
+    margin: 125px 0 0 0;
+}
+
+.list {
+    width: 667px;
+    float: left;
+}
+
+.list-routes {
+    float: left;
+    width: 667px;
+    height: 715px;
+    background: #ffffa6;
+    border-radius: 1%;
+}
+
+.list-routes-shape {
+    background-image:  url("./images/form-shape.png");
+    height: 74px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.list-of-destination {
+    float: right;
+}
+
+.list-routes-shape-text {
+    padding: 24px;
+}
+
+.time {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #29d9c2;
+    font-weight: bold;
+}
+
+.day {
+    float: left;
+    margin: 10px 0px 0 30px;
+}
+
+.date {
+    float: right;
+    margin: 12px 36px 0px 0;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.date:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 113px;
+    float: right;
+    border: 4px solid transparent;
+    border-top: 7px solid #29d9c2;
+    margin-top: 9px;
+}
+
+.place-route {
+    width: 597px;
+    height: 70px;
+    margin-left: 40px;
+    border: 1px solid #d5d57d;
+    background: white;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+.mountains{
+    background-image: url(./images/mt.bromo.png);
+    font-family: 'Lato Light' sans-serif;
+    background-position: 11px 20px;
+}
+
+.name-mountain {
+    color: #cacaca;
+    font-size: 24px;
+    width: 120px;
+    height: 30px;
+    margin: 26px 0 0 96px;
+    display: inline-block;
+    float: left;
+}
+
+.route-time {
+    font-size: 18px;
+    color: #cacaca;
+    margin: 26px 25px 0 0;
+    display: inline-block;
+    float: right;
+}
+
+.add-destination {
+    width: 180px;
+    height: 22px;
+    background: #f5e99e;
+    color: #d8cb7d;
+    font-size: 16px;
+    padding: 8px;
+    float: right;
+    margin-right: -15px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.plus {
+    float: right;
+    padding: 5px;
+    background: #d8cb7d;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0px 6px 0 7px;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+
+}
+
+.plus:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    background-image: url(./images/plus.png);
+    width: 10px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+}
+
+.plus:hover {
+    transform: rotate(90deg);
+}
+
+.city {
+    margin: 51px 0 0 40px;
+    background-image: url(./images/batu-city.png);
+    background-position: 20px 9px;
+}
+
+.notes {
+    background: #f5e99e;
+    padding: 0px 15px 0px 15px;
+    width: 536px;
+    margin-left: 62px;
+    border-radius: 0 0 0 5px;
+}
+
+.note {
+    width: 540px;
+    height: 30px;
+    background: #f5e99e;
+    color: #aea25c;
+    font-size: 16px;
+    text-align: left;
+    padding: 8px 0px 7px 0;
+}
+
+.note-name {
+    margin: 7px 0 0 13px;
+}
+
+.note:not(:first-child) {
+    border-top: 1px solid #dbce80;
+}
+
+.time-day {
+    margin-top: 54px;
+}
+
+.time2 {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #29d9c2;
+    font-weight: bold;
+}
+
+.day2 {
+    float: left;
+    margin: 10px 0px 0 30px;
+}
+
+.date2 {
+    float: right;
+    margin: 12px 36px 0px 0;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.date2:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 113px;
+    float: right;
+    border: 4px solid transparent;
+    border-top: 7px solid #29d9c2;
+    margin-top: 9px;
+}
+
+
+.dashed {
+    width: 594px;
+    height: 68px;
+    border: 5px dashed #e8e897;
+    font-size: 16px;
+    color: #e8e897;
+    margin: 11px 0 0 39px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.dashed-text {
+    padding: 24px;
+}
+
+.list-of-destination {
+    float: right;
+    height: 715px;
+    margin-left: 35px;
+    width: 467px;
+}
+
+.list-destination-text {
+    color: #42dcc6;
+    font-size: 18px;
+    padding: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.mountains-list {
+    width: 463px;
+    height: 70px;
+    margin-left: 40px;
+    border: 1px solid #e8e8e8;
+    background: white;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-image: url(./images/mt.bromo.png);
+    font-family: 'Lato Light' sans-serif;
+    background-position: 96% 26%;
+    margin: 0px 0 16px 0px;
+    cursor: move;
+}
+
+.list-of-destination-name {
+    color: #8a8a8a;
+    font-size: 24px;
+    width: 120px;
+    height: 30px;
+    margin: 11px 0 0 15px;
+    float: left;
+}
+
+.sort {
+    font-size: 16px;
+    color: #69e1cf;
+    margin: 27px 0 11px 3px;
+    position: relative;
+    text-align: left;
+}
+
+.sort:after {
+    content: "";
+    position: absolute;
+    background-image: url(./images/search2.png);
+    width: 14px;
+    height: 14px;
+    float: right;
+    top: 3px;
+    right: 28px;
+}
+
+.estimated-time {
+    width: 160px;
+    height: 15px;
+    color: #e8e8e8;
+    margin: 44px 0 0 14px;
+}
+
+.view-details {
+    width: 73px;
+    height: 15px;
+    color: #23c6b6;
+    float: right;
+    margin: -15px 15px 0 0px;
+}
+
+.button {
+    width: 446px;
+    margin: 16px 0 0 239px;
+}
+
+.save-as-pdf {
+    width: 130px;
+    height: 42px;
+    background: #c3f37f;
+    color: white;
+    font-size: 16px;
+    padding: 23px 0 0 37px;
+    margin: 15px 0px 0px 78px;
+    display: inline-block;
+    border-radius: 30px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+    
+}
+
+.save-as-pdf:hover {
+    background: #a9f143;
+} 
+
+.save-as-pdf:before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/save.png);
+    background-repeat: no-repeat;
+    top: 21px;
+    left: 18px;
+    width: 18px;
+    height: 20px;
+}
+
+.print {
+    width: 98px;
+    height: 43px;
+    background: #3ddbc7;
+    color: white;
+    font-size: 16px;
+    padding: 21px 0px 0 38px;
+    display: inline-block;
+    margin: 16px 15px 0 0;
+    float: right;
+    border-radius: 30px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-out 0s;
+    
+}
+
+.print:hover {
+    background:#4affe8;
+}
+
+.print:before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/print.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 26px;
+    width: 22px;
+    height: 22px;
+}
 
 .clearfix::after {
     content: "";
@@ -458,9 +854,289 @@ html, body {
     clear: both;
 }
 
+.contacts {
+    background-image: url(./images/untitled-2.png);
+    width: auto;
+    height: 666px;
+    margin-top: 100px;
+    position: relative;
+    background-size: cover;
+}
+
+.form {
+      width: 473px;
+      float: left
+  }
+
+.form input {
+    border:none;
+}
+
+.contact {
+    color: white;
+    font-size: 67px;
+    width: 1088px;
+    padding: 10px;
+    margin: 93px 0 0px 0px;
+    text-align: center;
+    display: inline-block;
+    height: 70px;
+}
+
+.email {
+    width: 427px;
+    height: 14px;
+    font-size: 14px;
+    color: #b9b9b9;
+    border-radius: 10px;
+    margin: 63px 0 0 0;
+    padding: 20px; 
+    outline: none;
+}
+
+.company {
+    width: 181px;
+    height: 14px;
+    font-size: 14px;
+    color: #b9b9b9;
+    border-radius: 10px;
+    margin: 18px 12px 0 0;
+    padding: 20px;
+    outline: none;
+}
+
+.subject {
+    width: 190px;
+    height: 14px;
+    font-size: 14px;
+    color: #b9b9b9;
+    border-radius: 10px;
+    margin: 18px 0 0 0;
+    padding: 20px;
+    outline: none;
+}
+
+.your-messages {
+    width: 424px;
+    height: 50px;
+    font-size: 14px;
+    color: #b9b9b9;
+    border-radius: 10px;
+    margin: 18px 0 0 0;
+    padding: 20px;
+    outline: none;
+}
+
+.send-message {
+    width: 162px;
+    height: 66px;
+    background: #c3f37f;
+    color: white;
+    font-size: 15px;
+    padding: 0px 0px 0 0;
+    margin: 26px 0px 0px 0;
+    border-radius: 30px;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-out 0s;
+}
+
+.send-message:hover {
+    background: #a0f724;
+}
+
+.information {
+    font-size: 12px;
+    color: white;
+    width: 476px;
+    float: right;
+    margin: 78px 0 0 11px;
+    font-weight: bold;
+}
+
+.card {
+    margin-left: 32px;
+    position: relative;
+}
+
+.card:before {
+    content: "";
+    width: 14px;
+    height: 11px;
+    position: absolute;
+    top: 5px;
+    left: -21px;
+    background-image: url(./images/card.png);
+}
+
+.find-here {
+    color: white;
+    font-size: 44px;
+    margin: 0px 0 62px 0px;
+}
+
+.phone1 {
+    margin-left: 31px;
+    position: relative;
+}
+
+.phone1:before,
+.phone2:before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 2px;
+    left: -21px;
+    background-image: url(./images/phone.png);
+}
+
+.phone2 {
+    margin: 7px 0 0 31px;
+    position: relative;
+}
+
+.in-touch {
+    height: 211px;
+    width: auto;
+    background: url(./images/toush.png);
+}
+
+.in-touch-text {
+    font-size: 67px;
+    color:white;
+    width: 506px;
+    float: left;
+    height: 40px;
+    margin: 77px 0 0 0;
+    font-weight: bold;
+}
+
+.in-touch input {
+    width: 359px;
+    height: 30px;
+    padding: 20px;
+    margin: 64px 0px 0 191px;
+    color: #c7c7c7;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline-width: inherit;
+}
+
+.in-touch button {
+    width: 70px;
+    height: 70px;
+    background: #01a2a6;
+    float: right;
+    margin: 64px 4px 0 0;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease-out 0s;
+}
+
+.in-touch button:hover {
+    background: #29d9c2;
+} 
+
+.in-touch button:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 28px;
+    background: url(./images/button-arrow.png);
+    top: 25px;
+    left: 31px;
+}
+
+.footer  {
+    background: #2f2933;
+    background-image: url(./images/footer.png);
+    height: 272px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: -77px 67px;
+    position: relative;
+    background-size: cover;
+}
+
+
+.footer-text {
+    font-size: 12px;
+    color: #5d5c5c;
+    display: block;
+    margin-top: 20px;
+    width: 217px;
+    height: 40px;
+    padding: 0px;
+    float: left;
+    font-weight: bold;
+}
+
+.social-networks {
+    width: 123px;
+    float: right;
+}
+
+.inst {
+    width: 31px;
+    height: 31px;
+    background-image: url(./images/inst.png);
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    border-radius: 55%;
+    margin: 18px 2px 0 0px;
+    float: right;
+    border: none;
+}
+
+.fb {
+    width: 31px;
+    height: 31px;
+    background-image: url(./images/fb.png);
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    border-radius: 55%;
+    margin: 18px 13px 0 10px;
+    float: left;
+    border: none;
+}
+
+.copy {
+    color: #a8a8a8;
+    margin: center bottom;
+    font-size: 12px;
+    position: absolute;
+    top: 237px;
+    left: 461px;
+}
+
+.twit {
+    width: 29px;
+    height: 29px;
+    background-image: url(./images/twit.png);
+     background-repeat: no-repeat; 
+    background-position: -1px -1px;
+    border-radius: 55%;
+    margin: 18px 2px 0 0px;
+    float: left;
+    border: none;
+}
+
+.social-networks:after {
+    background: #3d3741;
+    content: "";
+    position: absolute;
+}
+
 .proverka {
     position: absolute;
-    background-image: url("./images/proverka.jpg");
+    background-image: url("./proverka.jpg");
     width: 1400px;
     height: 5073px;
     left: 200px;
