@@ -855,7 +855,7 @@ html, body {
 }
 
 .contacts {
-    background-image: url(./images/untitled-2.png);
+    background-image: url(./images/map.png);
     width: auto;
     height: 666px;
     margin-top: 100px;
@@ -1134,16 +1134,6 @@ html, body {
     position: absolute;
 }
 
-.proverka {
-    position: absolute;
-    background-image: url("./proverka.jpg");
-    width: 1400px;
-    height: 5073px;
-    left: 200px;
-    top: -3px;
-    opacity: 0.5;
-    display: none;
-}
 
 
 
